@@ -162,6 +162,16 @@
                 document.getElementById("seconds").innerHTML = "00";
             }
         }, 1000);
+
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                audio.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        }
     </script>
 </body>
 
